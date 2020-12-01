@@ -7,48 +7,58 @@
 //////////////////////////
 
 
+
 // Classes
 class Component {
     constructor(option) {
 
-        this.$selector = document.createElement('button');
+        this.$selector = document.createElement('input');
+
+        this.$selector.type = 'button';
+        this.$selector.value = option.text;
+        this.$selector.onclick = option.task;
         this.$selector.id = option.id;
         this.$selector.style.height = option.height + 'px';
         this.$selector.style.width = option.width + 'px';
-        this.$selector.style.position = option.option;
-        this.$selector.innerHTML = option.text;
+        this.$selector.style.position = option.position;
 
         this.languageArr = ['ru', 'en'];
         this.language = option.languageArr;
     };
+    // functions
     show() {
         $('#languageBlock').append(this.$selector);
     };
+
 };
 
-class Translator {
+class Translator extends Component {
     constructor() {
-
+        
     };
 };
+// translations
 
-
+function changeEng() { console.log('PREPARE TO BATTLE!11111111') };
+function changeRus() { console.log('ПРИГОТОВЬТЕСЬ К БИТВЕ!11111111') };
 
 // Show up
 const ruLangSelector = new Component({
     languageArr: 0,
+    task: function monkeyFunction() { changeRus() },
     id: 'ruLangSelector',
     height: 30,
     width: 80.45,
-    position: 'absolute',
+    position: 'inherit',
     text: 'Russian'
 });
 const engLangSelector = new Component({
     languageArr: 1,
+    task: function monkeyFunction() { changeEng() },
     id: 'engLangSelector',
     height: 30,
     width: 80.45,
-    position: 'absolute',
+    position: 'inherit',
     text: 'English'
 });
 //
@@ -62,4 +72,4 @@ $('#optionsButtonsDiv').append(languageBlock);
 displayInfoMsg2("Support for other languages is activated! To change the language, go to settings")
 ruLangSelector.show();
 engLangSelector.show();
-//   document.querySelector("#optionsFullscreenButton").innerHTML = "";
+//   document.querySelector("#optionsFullscreenButton").innerHTML = "Всегда показывать сообщения";
