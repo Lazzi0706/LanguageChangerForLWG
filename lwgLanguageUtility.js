@@ -1,7 +1,7 @@
 ///////////////////////////
 //
 //    Utility for translate english text to russian and others languages.
-//    My hope to out of beta will never die!
+//    My hope to out of early alpha will never die!
 //    Made by: Lazzi
 //
 //////////////////////////
