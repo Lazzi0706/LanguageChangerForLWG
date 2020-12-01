@@ -8,6 +8,7 @@
 
 
 
+
 // Classes
 class Component {
     constructor(option) {
@@ -45,7 +46,7 @@ function changeRus() { console.log('ПРИГОТОВЬТЕСЬ К БИТВЕ!111
 // Show up
 const ruLangSelector = new Component({
     languageArr: 0,
-    task: function monkeyFunction() { changeRus() },
+    task: () => { changeRus() },
     id: 'ruLangSelector',
     height: 30,
     width: 80.45,
@@ -54,7 +55,7 @@ const ruLangSelector = new Component({
 });
 const engLangSelector = new Component({
     languageArr: 1,
-    task: function monkeyFunction() { changeEng() },
+    task: () => { changeEng() },
     id: 'engLangSelector',
     height: 30,
     width: 80.45,
