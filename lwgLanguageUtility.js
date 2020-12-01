@@ -1,4 +1,10 @@
-
+///////////////////////////
+//
+//    Utility for translate english text to russian and others languages.
+//    My hope to out of beta will never die!
+//    Made by: Lazzi
+//
+//////////////////////////
 
 // Classes
 class Component {
@@ -49,4 +55,4 @@ $('#optionsButtonsDiv').append(languageBlock);
 displayInfoMsg2("Support for other languages is activated! To change the language, go to settings")
 ruLangSelector.show();
 engLangSelector.show();
-//   document.querySelector("#optionsFullscreenButton").innerHTML = "Всегда показывать сообщения";
+//   document.querySelector("#optionsFullscreenButton").innerHTML = "Г‚Г±ГҐГЈГ¤Г  ГЇГ®ГЄГ Г§Г»ГўГ ГІГј Г±Г®Г®ГЎГ№ГҐГ­ГЁГї";
