@@ -1,3 +1,3 @@
 # LanguageChangerForLWG
-Modification to LWG to translate English text to other languages
+Modification to LWG to translate English text to other languages </br>
 Made by: Lazzi
