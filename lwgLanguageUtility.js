@@ -6,6 +6,7 @@
 //
 //////////////////////////
 
+// Keys
 
 
 
@@ -33,15 +34,52 @@ class Component {
 
 };
 
-class Translator extends Component {
-    constructor() {
-        
-    };
-};
-// translations
 
-function changeEng() { console.log('PREPARE TO BATTLE!11111111') };
-function changeRus() { console.log('ПРИГОТОВЬТЕСЬ К БИТВЕ!11111111') };
+
+ // ATTENTION
+
+
+/*class Translator  {
+    constructor(parameter) {
+        this.documentSel = document.querySelector();
+        this.$translateText = parameter.documentSel;
+        this.$translateText.innerHTML = parameter.innerText;
+    };
+};*/
+
+ // ATTENTION 
+
+
+// translations. Start of monkey code.... 
+
+function changeEng() {
+    console.log('PREPARE TO BATTLE!11111111')
+
+};
+function changeRus() {
+
+    console.log('ПРИГОТОВЬТЕСЬ К БИТВЕ!11111111')
+    // overload....
+     // OPTIONS
+    let optionsFullScreenButton = document.querySelector("#optionsFullscreenButton");
+    let hotkeyWindowButton = document.querySelector("#hotkeyWindowButton");
+    let openFaqButton = document.querySelector("#openFaqButton");
+    let loadAIbutton = document.querySelector("#loadAIButton");
+    let switchQueriesButton = document.querySelector("#switchQueriesButton");
+
+    optionsFullScreenButton.style.textSize = 32 + 'px';
+    hotkeyWindowButton.style.textSize = 32 + 'px';
+    openFaqButton.style.textSize = 32 + 'px';
+    loadAIbutton.style.textSize = 32 + 'px';
+    switchQueriesButton.style.textSize = 32 + 'px';
+
+    optionsFullScreenButton.innerHTML = 'Полноэкранный режим';
+    hotkeyWindowButton.innerHTML = 'Горячие клавиши';
+    openFaqButton.innerHTML = 'ЧаВо';
+    loadAIbutton.innerHTML = 'Загрузить самописный ИИ';
+    switchQueriesButton.innerHTML = 'Всегда показывать сообщения';
+    //
+};
 
 // Show up
 const ruLangSelector = new Component({
@@ -62,15 +100,16 @@ const engLangSelector = new Component({
     position: 'inherit',
     text: 'English'
 });
-//
 const languageBlock = document.createElement('div');
 languageBlock.id = 'languageBlock';
 languageBlock.style.width = 100 + 'px';
 languageBlock.style.border = 1 + 'px, solid';
 languageBlock.style.margin = 'auto';
 $('#optionsButtonsDiv').append(languageBlock);
+
 //
 displayInfoMsg2("Support for other languages is activated! To change the language, go to settings")
 ruLangSelector.show();
 engLangSelector.show();
+
 //   document.querySelector("#optionsFullscreenButton").innerHTML = "Всегда показывать сообщения";
