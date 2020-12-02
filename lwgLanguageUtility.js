@@ -53,19 +53,17 @@ class Component {
 // translations. Start of monkey code.... 
 
 function changeEng() {
-    console.log('PREPARE TO BATTLE!11111111')
 
 };
 function changeRus() {
 
-    console.log('ПРИГОТОВЬТЕСЬ К БИТВЕ!11111111')
     // overload....
      // OPTIONS
-    let optionsFullScreenButton = document.querySelector("#optionsFullscreenButton");
-    let hotkeyWindowButton = document.querySelector("#hotkeyWindowButton");
-    let openFaqButton = document.querySelector("#openFaqButton");
-    let loadAIbutton = document.querySelector("#loadAIButton");
-    let switchQueriesButton = document.querySelector("#switchQueriesButton");
+    var optionsFullScreenButton = document.querySelector("#optionsFullscreenButton");
+    var hotkeyWindowButton = document.querySelector("#hotkeyWindowButton");
+    var openFaqButton = document.querySelector("#openFaqButton");
+    var loadAIbutton = document.querySelector("#loadAIButton");
+    var switchQueriesButton = document.querySelector("#switchQueriesButton");
 
     optionsFullScreenButton.style.textSize = 32 + 'px';
     hotkeyWindowButton.style.textSize = 32 + 'px';
@@ -76,7 +74,7 @@ function changeRus() {
     optionsFullScreenButton.innerHTML = 'Полноэкранный режим';
     hotkeyWindowButton.innerHTML = 'Горячие клавиши';
     openFaqButton.innerHTML = 'ЧаВо';
-    loadAIbutton.innerHTML = 'Загрузить самописный ИИ';
+    loadAIbutton.innerHTML = 'Загрузить ИИ';
     switchQueriesButton.innerHTML = 'Всегда показывать сообщения';
     //
 };
