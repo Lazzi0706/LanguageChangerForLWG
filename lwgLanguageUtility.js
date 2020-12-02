@@ -7,11 +7,71 @@
 //////////////////////////
 
 // Keys
+const langButtons = [
+    {
+        'name': 'Russian',
+        'id': 0,
+        'options': [
+            ['optionsFullScreenButton', 'Полноэкранный режим'],
+            ['hotkeyWindowButton', 'Горячие клавиши'],
+            ['openFaqButton', 'ЧаВо'],
+            ['LoadAIbutton', 'Загрузить ИИ']
+            ['switchQueriesButton', 'Всегда показывать всплывающие сообщения']
+        ]
+    },
+];
+
+// translations. Start of monkey code.... 
+
+function changeRus() {
+
+    // overload....
+     // OPTIONS
+    var optionsFullScreenButton = document.querySelector('#optionsFullscreenButton');
+    var hotkeyWindowButton = document.querySelector('#hotkeyWindowButton');
+    var openFaqButton = document.querySelector('#openFaqButton');
+    var loadAIbutton = document.querySelector('#loadAIButton');
+    var switchQueriesButton = document.querySelector('#switchQueriesButton');
+    optionsFullScreenButton.style.fontSize = 18 + 'px';
+    hotkeyWindowButton.style.fontSize = 18 + 'px';
+    openFaqButton.style.fontSize = 18 + 'px';
+    loadAIbutton.style.fontSize = 18 + 'px';
+    switchQueriesButton.style.fontSize = 18 + 'px';
+
+    optionsFullScreenButton.innerHTML = 'Полноэкранный режим';
+    hotkeyWindowButton.innerHTML = 'Горячие клавиши';
+    openFaqButton.innerHTML = 'ЧаВо';
+    loadAIbutton.innerHTML = 'Загрузить ИИ';
+    switchQueriesButton.innerHTML = 'Не показывать всплывающие сообщения';
+
+    // OPTIONS: SLIDERS
 
 
 
+
+    //
+
+
+
+
+};
+
+let a = new displayInfoMsg2("Support for other languages is activated! To change the language, go to settings");
+
+
+ /*
+  * 
+  * 
+  *         OLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLD
+  *         OLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLD
+  *         OLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLD
+  *         OLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLD
+  *         OLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLDOLD
+  * 
+  * 
+ /*
 // Classes
-class Component {
+/*class Component {
     constructor(option) {
 
         this.$selector = document.createElement('input');
@@ -32,55 +92,10 @@ class Component {
         $('#languageBlock').append(this.$selector);
     };
 
-};
-
-
-
- // ATTENTION
-
-
-/*class Translator  {
-    constructor(parameter) {
-        this.documentSel = document.querySelector();
-        this.$translateText = parameter.documentSel;
-        this.$translateText.innerHTML = parameter.innerText;
-    };
 };*/
 
- // ATTENTION 
 
-
-// translations. Start of monkey code.... 
-
-function changeEng() {
-
-};
-function changeRus() {
-
-    // overload....
-     // OPTIONS
-    var optionsFullScreenButton = document.querySelector("#optionsFullscreenButton");
-    var hotkeyWindowButton = document.querySelector("#hotkeyWindowButton");
-    var openFaqButton = document.querySelector("#openFaqButton");
-    var loadAIbutton = document.querySelector("#loadAIButton");
-    var switchQueriesButton = document.querySelector("#switchQueriesButton");
-
-    optionsFullScreenButton.style.textSize = 32 + 'px';
-    hotkeyWindowButton.style.textSize = 32 + 'px';
-    openFaqButton.style.textSize = 32 + 'px';
-    loadAIbutton.style.textSize = 32 + 'px';
-    switchQueriesButton.style.textSize = 32 + 'px';
-
-    optionsFullScreenButton.innerHTML = 'Полноэкранный режим';
-    hotkeyWindowButton.innerHTML = 'Горячие клавиши';
-    openFaqButton.innerHTML = 'ЧаВо';
-    loadAIbutton.innerHTML = 'Загрузить ИИ';
-    switchQueriesButton.innerHTML = 'Всегда показывать сообщения';
-    //
-};
-
-// Show up
-const ruLangSelector = new Component({
+/*const ruLangSelector = new Component({
     languageArr: 0,
     task: () => { changeRus() },
     id: 'ruLangSelector',
@@ -88,8 +103,10 @@ const ruLangSelector = new Component({
     width: 80.45,
     position: 'inherit',
     text: 'Russian'
-});
-const engLangSelector = new Component({
+});*/
+
+
+/*const engLangSelector = new Component({
     languageArr: 1,
     task: () => { changeEng() },
     id: 'engLangSelector',
@@ -98,16 +115,4 @@ const engLangSelector = new Component({
     position: 'inherit',
     text: 'English'
 });
-const languageBlock = document.createElement('div');
-languageBlock.id = 'languageBlock';
-languageBlock.style.width = 100 + 'px';
-languageBlock.style.border = 1 + 'px, solid';
-languageBlock.style.margin = 'auto';
-$('#optionsButtonsDiv').append(languageBlock);
-
-//
-displayInfoMsg2("Support for other languages is activated! To change the language, go to settings")
-ruLangSelector.show();
-engLangSelector.show();
-
-//   document.querySelector("#optionsFullscreenButton").innerHTML = "Всегда показывать сообщения";
+engLangSelector.show();*/
