@@ -40,7 +40,16 @@
 
 ];
 
-
+// Show up buttons
+const languageButton = document.createElement('button');
+languageButton.innerHTML = 'Languages';
+$('#optionsButtonsDiv').append(languageButton);
+languageButton.onclick = () => {
+    let info = '<h1> Select languages </h1> </br>';
+    let ruButton = document.createElement('button').innerHTML = languages[0].name;
+    info += ruButton;
+    displayInfoMsg(info);
+    };
 
  /*
   * 
