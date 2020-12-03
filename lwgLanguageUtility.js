@@ -1,62 +1,45 @@
-///////////////////////////
-//
-//    Utility for translate english text to russian and others languages.
-//    My hope to out of early alpha will never die!
-//    Made by: Lazzi
-//
-//////////////////////////
+// Todo:
+/* 
+ 
+ 
+ 
+ */
+     const languages = [
 
-// Keys
-const langButtons = [
+    // Translate
+
     {
         'name': 'Russian',
+        'tag': 'ruButton',
         'id': 0,
-        'options': [
+         'options': [
+             /* Main menu */
             ['optionsFullScreenButton', 'Полноэкранный режим'],
             ['hotkeyWindowButton', 'Горячие клавиши'],
             ['openFaqButton', 'ЧаВо'],
             ['LoadAIbutton', 'Загрузить ИИ']
-            ['switchQueriesButton', 'Всегда показывать всплывающие сообщения']
+            ['switchQueriesButton', 'Всегда показывать всплывающие сообщения'],
+            //
+            ['faqLink', 'ЧаВо'],
+            ['guestLoginPromptButton', 'Выйти'],
+            //
+            ['windowTitle2', 'Игроки'],
+            ['windowTitle', 'Лобби']
+            //
+            ['lobbyCreateButton', 'Играть'],
+            ['singleplayerButton', 'Играть против ИИ'],
+            ['ladderButton', 'Рейтинговая игра'],
+            ['mapEditorButton', 'Редактор'],
+            ['tutorialButtonSpan', 'Обучение'],
+            ['replayButton', 'Загрузить повтор'],
+            ['lobbySaveReplayButton', 'Сохранить повтор'],
+             /* */
+
         ]
     },
+
 ];
 
-// translations. Start of monkey code.... 
-
-function changeRus() {
-
-    // overload....
-     // OPTIONS
-    var optionsFullScreenButton = document.querySelector('#optionsFullscreenButton');
-    var hotkeyWindowButton = document.querySelector('#hotkeyWindowButton');
-    var openFaqButton = document.querySelector('#openFaqButton');
-    var loadAIbutton = document.querySelector('#loadAIButton');
-    var switchQueriesButton = document.querySelector('#switchQueriesButton');
-    optionsFullScreenButton.style.fontSize = 18 + 'px';
-    hotkeyWindowButton.style.fontSize = 18 + 'px';
-    openFaqButton.style.fontSize = 18 + 'px';
-    loadAIbutton.style.fontSize = 18 + 'px';
-    switchQueriesButton.style.fontSize = 18 + 'px';
-
-    optionsFullScreenButton.innerHTML = 'Полноэкранный режим';
-    hotkeyWindowButton.innerHTML = 'Горячие клавиши';
-    openFaqButton.innerHTML = 'ЧаВо';
-    loadAIbutton.innerHTML = 'Загрузить ИИ';
-    switchQueriesButton.innerHTML = 'Не показывать всплывающие сообщения';
-
-    // OPTIONS: SLIDERS
-
-
-
-
-    //
-
-
-
-
-};
-
-let a = new displayInfoMsg2("Support for other languages is activated! To change the language, go to settings");
 
 
  /*
