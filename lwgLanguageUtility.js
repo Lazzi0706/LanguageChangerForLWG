@@ -1,3 +1,4 @@
+
 // Todo:
 /* 
  
@@ -43,13 +44,44 @@
 // Show up buttons
 const languageButton = document.createElement('button');
 languageButton.innerHTML = 'Languages';
+// Todo:
+/* 
+ 
+ 
+ 
+ */
+const languages = [
+
+    {
+        'name': 'Russian',
+        'tag': 'ruButton',
+        'id': 1,
+        'options': [
+
+            ['optionsFullScreenButton', 'Полноэкранный режим'],
+            ['hotkeyWindowButton', 'Горячие клавиши'],
+            ['openFaqButton', 'ЧаВо'],
+            ['LoadAIbutton', 'Загрузить ИИ'],
+            ['switchQueriesButton', 'Всегда показывать всплывающие сообщения']
+
+        ]
+    }
+
+
+
+
+];
+
+// Show up buttons
+const languageButton = document.createElement('button');
+languageButton.innerHTML = 'Languages';
 $('#optionsButtonsDiv').append(languageButton);
 languageButton.onclick = () => {
     let info = '<h1> Select languages </h1> </br>';
-    let ruButton = document.createElement('button').innerHTML = languages[0].name;
+    const ruButton = document.createElement('button').innerHTML = languages[0].name;
     info += ruButton;
     displayInfoMsg(info);
-    };
+};
 
  /*
   * 
@@ -88,6 +120,26 @@ languageButton.onclick = () => {
 
 
 /*const ruLangSelector = new Component({
+    languageArr: 0,
+    task: () => { changeRus() },
+    id: 'ruLangSelector',
+    height: 30,
+    width: 80.45,
+    position: 'inherit',
+    text: 'Russian'
+});*/
+
+
+/*const engLangSelector = new Component({
+    languageArr: 1,
+    task: () => { changeEng() },
+    id: 'engLangSelector',
+    height: 30,
+    width: 80.45,
+    position: 'inherit',
+    text: 'English'
+});
+engLangSelector.show();*/
     languageArr: 0,
     task: () => { changeRus() },
     id: 'ruLangSelector',
