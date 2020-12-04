@@ -105,9 +105,13 @@ const languageButton = document.createElement('button');
 languageButton.innerHTML = 'Languages';
 $('#optionsButtonsDiv').append(languageButton);
 languageButton.onclick = function langChange() {
-    const info1 = ' <h1> Select language </h1> </br> <button onclick = ' + alert('readyRu') + '> ' + languages[1].name + ' </button> ' ;
-    const info2 = info1 + ' <button onclick = ' + alert('readyEng') + '> ' + languages[0].name + ' </button> ';
+    const title = 'Select Language </br>';
+    const info1 = "<button onclick = 'foo();'>" + languages[0].name + "</button>";
+    const info2 = title + info1 + "<button onclick = 'foo();'>" + languages[1].name + "</button>";;
     displayInfoMsg(info2);
 
 
+};
+function foo() {
+    console.log('yeyeeyeye')
 };
